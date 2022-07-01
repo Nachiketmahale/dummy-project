@@ -1,0 +1,33 @@
+<h3>Property binding and event binding</h3>
+<div class="btn-wrapper">
+    <button [disabled]="btn1State" (click)="btn1Click()">
+        {{btn1}}
+    </button>
+    <button [disabled]="btn2State" (click)="btn2Click()">{{btn2}}</button>
+</div>
+<input type="text" placeholder="Enter the data" [readonly]="inputState" (input)="onchange($event)">
+<p>Entered text:{{text}}</p>
+<hr>
+<h3>inbuild directives ngIf</h3>
+
+<div class="btn-wrapper">
+    <button [disabled]="btn3State" (click)="btn3Click()">
+        {{btn3}}
+    </button>
+    <button [disabled]="btn4State" (click)="btn4Click()">{{btn4}}</button>
+</div>
+<input type="text" placeholder="Enter the data" *ngIf="showStatus">
+
+<p>display: {{input1displaystatus}}</p>
+<hr>
+
+<h3>inbuild directives ngclass</h3>
+
+<div class="btn-wrapper">
+    <button [disabled]="btn5State" (click)="btn5Click()">
+        {{btn3}}
+    </button>
+    <button [disabled]="btn6State" (click)="btn6Click()">{{btn4}}</button>
+</div>
+<input type="text" placeholder="Enter the data" [ngClass]="status?'show':'hide'">
+<p>display: {{input2displaystatus}}</p>

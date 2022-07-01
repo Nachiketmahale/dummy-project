@@ -1,0 +1,39 @@
+<!-- <form (ngSubmit)="Onsubmit()" #f="ngForm">
+    <div class="grp">
+        <label for="username">Username</label>
+        <input type="text" id="username" ngModel name="username" required>
+    </div>
+    <button type="button">Suggest an Username</button>
+    <div class="grp">
+        <label for="mail">Mail</label>
+        <input type="text" id="mail" ngModel name="mail" required email>
+    </div>
+    <div class="grp">
+        <label for="secreat">Secreat Question</label>
+        <select id="secreat" ngModel name="secreat" required>
+            <option value="pet">Your first Pet?</option>
+            <option value="teacher">Your first teacher?</option>
+        </select>
+    </div>
+    <button type="submit">submit</button>
+</form> -->
+
+<form (ngSubmit)="Onsubmit(formm)" #formm="ngForm">
+    <div class="grp">
+        <label for="fn">FirstName</label>
+        <input type="text" id="fn" placeholder="First Name" ngModel name="fn" required>
+    </div>
+    <div class="grp">
+        <label for="fn">LastName</label>
+        <input type="text" id="ln" placeholder="Last Name" ngModel name="ln" required>
+    </div>
+    <div class="grp">
+        <label for="fn">Email</label>
+        <input type="email" id="email" ngModel placeholder="Email" name="email" required email>
+    </div>
+    <div class="grp">
+        <label for="gender">password</label>
+        <input type="password" id="password" ngModel placeholder="Password" name="password" minlength="10" required>
+    </div>
+    <button type="submit" [disabled]="!formm.valid">Submit</button>
+</form>

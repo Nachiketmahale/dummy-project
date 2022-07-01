@@ -1,0 +1,16 @@
+header{
+    padding: 1rem 0px;
+    background: black;
+    color :white
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    color:#eee;
+    text-decoration: none;
+}

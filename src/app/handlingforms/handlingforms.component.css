@@ -1,0 +1,25 @@
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+input{
+    padding:10px;
+    border:1px solid black;
+    border-radius: 10px;
+}
+
+.grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+input.ng-invalid.ng-touched{
+    border:1px solid red;
+}
+
